@@ -6,7 +6,7 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.common.exceptions import NoSuchElementException, TimeoutException
 
-# Function of waiting until the present of the element on the web page
+# Function to wait for element to appear on page
 def waiting_func(by_variable, attribute):
     try:
         WebDriverWait(driver, 20).until(lambda x: x.find_element(by=by_variable,  value=attribute))
